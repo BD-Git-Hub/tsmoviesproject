@@ -1,9 +1,54 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import GenreItems from "../genre/GenreItems";
+
+const GenresContainer = styled.div`
+  background-color: blue;
+  height: 30rem;
+  width: 100%;
+
+`;
+
+const LeftArrowDiv = styled.div`
+  background-color: orange;
+  width: 8%;
+  height: 30rem;
+  display: inline-block;
+
+`;
+
+const LeftArrowButton = styled.button`
+  position: relative;
+  top: 40%;
+  font-size: 100%;
+`;
+
+const GenresCenterDiv = styled.div`
+  background-color: pink;
+  width: 84%;
+  display: inline-block;
+  height: 30rem;
+ 
+`;
+const RightArrowButton = styled.button`
+  position: relative;
+  top: 40%;
+  font-size: 100%;
+  float: right;
+`;
 
 const Genres = () => {
   return (
-    <div>Genres</div>
-  )
-}
+    <GenresContainer>
+      <LeftArrowDiv>
+        <LeftArrowButton>Left Arrow </LeftArrowButton>
+      </LeftArrowDiv>
+      <GenresCenterDiv><GenreItems/></GenresCenterDiv>
+      <RightArrowButton>right arrow </RightArrowButton>
 
-export default Genres
+      
+    </GenresContainer>
+  );
+};
+
+export default Genres;
