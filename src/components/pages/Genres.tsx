@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ArrowButton from "../button/ArrowButton";
 import GenreItems from "../genre/GenreItems";
 
 const GenresContainer = styled.div`
@@ -48,7 +49,10 @@ const Genres = () => {
   return (
     <GenresContainer>
       <LeftArrowDiv>
-        <LeftArrowButton>Left Arrow </LeftArrowButton>
+
+        <ArrowButton name={'left arrow'}/>
+
+        {/* <LeftArrowButton>Left Arrow </LeftArrowButton> */}
       </LeftArrowDiv>
       <GenresCenterDiv><GenreItems/></GenresCenterDiv>
 

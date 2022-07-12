@@ -1,8 +1,18 @@
-import React from 'react'
+import styled from "styled-components"
+
+
+const TrailersContainer = styled.div`
+
+background-color: blue;
+height: 20rem;
+width: 100%;
+
+`;
+
 
 const Trailers = () => {
   return (
-    <div>Trailers</div>
+    <TrailersContainer>Trailers</TrailersContainer>
   )
 }
 

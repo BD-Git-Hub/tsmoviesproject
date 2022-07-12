@@ -16,14 +16,15 @@ const GenresTitle = styled.p`
 const GenreItemsContainer = styled.div`
   height: 20rem;
   background-color: yellow;
-  width: 100%;
+  width: 100%; 
+  overflow: hidden;
   
 `;
 
 const GenreItemGrp = styled.div`
   height: 20rem;
   background-color: lightblue;
-  width: 15%;
+  width: 15rem;
   text-align: center;
   display: inline-block;
   margin-left: 0.2rem;
@@ -68,9 +69,6 @@ const GenreItems = () => {
           <GenreItemTitle>Genre Title</GenreItemTitle>
           <GenreItemImage></GenreItemImage>
         </GenreItemGrp>
-        
-        
-        
       </GenreItemsContainer>
     </GenreContainer>
   );
