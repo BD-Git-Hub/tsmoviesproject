@@ -1,11 +1,13 @@
-import styled from "styled-components";
-import ArrowButton from "../button/ArrowButton";
+import styled from "styled-components"
 import GenreItems from "../genre/GenreItems";
 
-const GenresContainer = styled.div`
-  background-color: blue;
-  height: 30rem;
-  width: 100%;
+
+const TrailersContainer = styled.div`
+
+background-color: blue;
+height: 20rem;
+width: 100%;
+
 `;
 
 const LeftArrowDiv = styled.div`
@@ -36,6 +38,8 @@ const RightArrowDiv = styled.div`
   width: 8%;
   height: 30rem;
   display: inline-block;
+  float: right;
+  margin: 0;
 `;
 
 const RightArrowButton = styled.button`
@@ -45,24 +49,26 @@ const RightArrowButton = styled.button`
   float: right;
 `;
 
-const Genres = () => {
+
+const Trailers = () => {
   return (
-    <GenresContainer>
+    <TrailersContainer>
       <LeftArrowDiv>
+        <LeftArrowButton>Left Arrow</LeftArrowButton>
+    </LeftArrowDiv>
 
-        <ArrowButton name={'left arrow'}/>
-
-        {/* <LeftArrowButton>Left Arrow </LeftArrowButton> */}
-      </LeftArrowDiv>
-      <GenresCenterDiv><GenreItems/></GenresCenterDiv>
+    <GenresCenterDiv>
+        <GenreItems />
+      </GenresCenterDiv>
 
       <RightArrowDiv>
         <RightArrowButton>Right Arrow</RightArrowButton>
       </RightArrowDiv>
-
       
-    </GenresContainer>
-  );
-};
+    </TrailersContainer>
 
-export default Genres;
+    
+  )
+}
+
+export default Trailers

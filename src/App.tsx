@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./components/nav/Navbar";
-import Genres from "./components/pages/Genres";
-import Index from "./components/pages/Index";
-import Trailers from "./components/pages/Trailers";
+import Genres from "./components/indexComponents/Genres";
+import Index from "./components/indexComponents/Index";
+import Trailers from "./components/indexComponents/Trailers";
+import Footer from "./components/indexComponents/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Index/>
       <Genres/>
       <Trailers/>
+      <Footer/>
       
 
     </>
