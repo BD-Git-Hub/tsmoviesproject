@@ -1,11 +1,12 @@
 import styled from "styled-components"
-import GenreItems from "../genre/GenreItems";
+import Items from './Items/Items'
+
 
 
 const TrailersContainer = styled.div`
-
+margin-top: 1rem;
 background-color: blue;
-height: 20rem;
+height: 30rem;
 width: 100%;
 
 `;
@@ -25,7 +26,7 @@ const LeftArrowButton = styled.button`
   margin: 0;
 `;
 
-const GenresCenterDiv = styled.div`
+const CenterDiv = styled.div`
   background-color: pink;
   width: 84%;
   display: inline-block;
@@ -57,9 +58,9 @@ const Trailers = () => {
         <LeftArrowButton>Left Arrow</LeftArrowButton>
     </LeftArrowDiv>
 
-    <GenresCenterDiv>
-        <GenreItems />
-      </GenresCenterDiv>
+    <CenterDiv>
+        <Items />
+      </CenterDiv>
 
       <RightArrowDiv>
         <RightArrowButton>Right Arrow</RightArrowButton>

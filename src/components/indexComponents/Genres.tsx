@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import ArrowButton from "../button/ArrowButton";
-import GenreItems from "../genre/GenreItems";
+import Items from "./Items/Items";
 
 const GenresContainer = styled.div`
+margin-top: 1rem;
   background-color: blue;
   height: 30rem;
   width: 100%;
@@ -23,7 +24,7 @@ const LeftArrowButton = styled.button`
   margin: 0;
 `;
 
-const GenresCenterDiv = styled.div`
+const CenterDiv = styled.div`
   background-color: pink;
   width: 84%;
   display: inline-block;
@@ -51,17 +52,16 @@ const Genres = () => {
   return (
     <GenresContainer>
       <LeftArrowDiv>
-
         <LeftArrowButton>Left Arrow</LeftArrowButton>
         {/* <ArrowButton name={"Left Arrow"} direction={left}/> */}
       </LeftArrowDiv>
-      <GenresCenterDiv>
-        <GenreItems />
-      </GenresCenterDiv>
+      <CenterDiv>
+        <Items />
+      </CenterDiv>
 
       <RightArrowDiv>
         <RightArrowButton>Right Arrow</RightArrowButton>
-       {/* <ArrowButton name={"right Arrow"} direction={right}/> */}
+        {/* <ArrowButton name={"right Arrow"} direction={right}/> */}
       </RightArrowDiv>
     </GenresContainer>
   );

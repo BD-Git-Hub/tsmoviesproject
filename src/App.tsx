@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/nav/Navbar";
 import Genres from "./components/indexComponents/Genres";
 import Index from "./components/indexComponents/Index";
@@ -14,8 +13,7 @@ function App() {
       <Genres/>
       <Trailers/>
       <Ratings/>
-      <Footer/>
-      
+      <Footer/>  
 
     </>
       
