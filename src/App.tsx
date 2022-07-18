@@ -8,7 +8,7 @@ import Ratings from "./components/indexComponents/Ratings";
 function App() {
   return (
     <>
-      <Navbar/>
+     
       <Index/>
       <Genres/>
       <Trailers/>
