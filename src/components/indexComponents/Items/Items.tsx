@@ -1,76 +1,37 @@
-import styled from "styled-components";
-
-const ItemContainer = styled.div`
-  height: 26rem;
-  max-width: 98%;
-  background-color: red;
-
-  margin: 1rem;
-`;
-
-const ItemTitle = styled.p`
-  margin: 0;
-  font-size: 3rem;
-`;
-
-const ItemsContainer = styled.div`
-  height: 20rem;
-  background-color: yellow;
-  width: 100%; 
-  overflow: hidden;
-  
-`;
-
-const ItemGrp = styled.div`
-  height: 20rem;
-  background-color: lightblue;
-  width: 15rem;
-  text-align: center;
-  display: inline-block;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-`;
-
-const ItemGrpTitle = styled.p`
-  font-size: 2rem;
-`;
-
-const GenreItemImage = styled.img`
-  height: 13rem;
-  width: 13rem;
-`;
-
 const Items = () => {
   return (
-    <ItemContainer>
-      <ItemTitle>Title</ItemTitle>
-      <ItemsContainer>
-        <ItemGrp>
-          <ItemGrpTitle>Item Title</ItemGrpTitle>
-          <GenreItemImage></GenreItemImage>
-        </ItemGrp>
-        <ItemGrp>
-          <ItemGrpTitle>Item Title</ItemGrpTitle>
-          <GenreItemImage></GenreItemImage>
-        </ItemGrp>
-        <ItemGrp>
-          <ItemGrpTitle>Item Title</ItemGrpTitle>
-          <GenreItemImage></GenreItemImage>
-        </ItemGrp>
-        <ItemGrp>
-          <ItemGrpTitle>Item Title</ItemGrpTitle>
-          <GenreItemImage></GenreItemImage>
-        </ItemGrp>
-        <ItemGrp>
-          <ItemGrpTitle>Item Title</ItemGrpTitle>
-          <GenreItemImage></GenreItemImage>
-        </ItemGrp>
-        <ItemGrp>
-          <ItemGrpTitle>Item Title</ItemGrpTitle>
-          <GenreItemImage></GenreItemImage>
-        </ItemGrp>
-      </ItemsContainer>
-    </ItemContainer>
+    <div className="h-96 max-w-7x1 bg-red-400">
+      <p className="text-5xl">Category Title</p>
+
+      <div className="bg-yellow-400 h-5/6 mt-2 overflow-hidden">
+        <div className="itemGrp">
+          <p className="text-5x1">Item title</p>
+          <img src="#" alt="" className="h-52 w-52" />
+        </div>
+        <div className="itemGrp">
+          <p className="text-5x1">Item title</p>
+          <img src="#" alt="" className="h-52 w-52" />
+        </div>
+        <div className="itemGrp">
+          <p className="text-5x1">Item title</p>
+          <img src="#" alt="" className="h-52 w-52" />
+        </div>
+        <div className="itemGrp">
+          <p className="text-5x1">Item title</p>
+          <img src="#" alt="" className="h-52 w-52" />
+        </div>
+        <div className="itemGrp">
+          <p className="text-5x1">Item title</p>
+          <img src="#" alt="" className="h-52 w-52" />
+        </div>
+        <div className="itemGrp">
+          <p className="text-5x1">Item title</p>
+          <img src="#" alt="" className="h-52 w-52" />
+        </div>
+      </div>
+    </div>
+
+    
   );
 };
 

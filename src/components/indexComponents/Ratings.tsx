@@ -1,75 +1,18 @@
-import styled from "styled-components"
 import Items from './Items/Items'
-
-
-
-const RatingsContainer = styled.div`
-margin-top: 1rem;
-background-color: blue;
-height: 30rem;
-width: 100%;
-
-`;
-
-const LeftArrowDiv = styled.div`
-  background-color: orange;
-  width: 8%;
-  height: 30rem;
-  display: inline-block;
-`;
-
-const LeftArrowButton = styled.button`
-  position: relative;
-  top: 40%;
-  font-size: 100%;
-  float: left;
-  margin: 0;
-`;
-
-const CenterDiv = styled.div`
-  background-color: pink;
-  width: 84%;
-  display: inline-block;
-  height: 30rem;
-  vertical-align: top;
-  position: relative;
-  left: 8%;
-  
-`;
-
-const RightArrowDiv = styled.div`
-  background-color: orange;
-  width: 8%;
-  height: 30rem;
-  display: inline-block;
-  float: right;
-  margin: 0;
-`;
-
-const RightArrowButton = styled.button`
-  position: relative;
-  top: 40%;
-  font-size: 100%;
-  float: right;
-`;
-
 
 const Ratings = () => {
   return (
-    <RatingsContainer>
-      {/* <LeftArrowDiv>
-        <LeftArrowButton>Left Arrow</LeftArrowButton>
-    </LeftArrowDiv> */}
-
-    <CenterDiv>
-        <Items />
-      </CenterDiv>
-
-      <RightArrowDiv>
-        <RightArrowButton>Right Arrow</RightArrowButton>
-      </RightArrowDiv>
-      
-    </RatingsContainer>
+    <div className="bg-blue-500 h-96 w-full flex flex-row">
+      <div className="bg-orange-400 h-96 basis-36">
+        <button className="relative top-2/4 text-lg float-left">Left Arrow</button>
+      </div>
+      <div className="bg-pink-400 h-96 basis-11/12">
+        <Items/>
+      </div>
+      <div className="bg-orange-400 h-96 basis-36">
+        <button className="relative top-2/4 text-lg float-right">Right Arrow</button>
+      </div>
+    </div>
 
     
   )
